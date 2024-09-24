@@ -22,3 +22,4 @@
 - к.э.н., доцент Панов М.А.
 
 - 
+![image](https://github.com/user-attachments/assets/afff411f-f75e-4774-8c59-a526afb59a46)
