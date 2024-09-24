@@ -1,0 +1,11 @@
+for i in range(3):
+    s = input()
+    print(len(s))
+    s = s.lower()
+    print(s)
+    print(s.count("a") + s.count("e") + s.count("i") + s.count("o") + s.count("u"))
+    print(s.replace("ugly", "beautiful"))
+    if s[:3] == "the": print("Начинается с \"The\"", end="; ")
+    else: print("Не начинается с \"The\"", end="; ")
+    if s[-3:] == "end": print("Кончается на \"end\"")
+    else: print("Не кончается на \"end\"")
