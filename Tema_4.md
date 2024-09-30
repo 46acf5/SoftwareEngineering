@@ -246,7 +246,7 @@ if figure == '1':
 elif figure == '2':
     triangle()
 
-print(f"Площадь: (result)")
+print(f"Площадь: {result}")
 ```
 
 ### Результат.
