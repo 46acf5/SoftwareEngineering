@@ -6,7 +6,7 @@ def say_hello():
 
 '''
 
-from hello import say_hello
+import hello
 
 if __name__ == '__main__':
-    say_hello()
+    hello.say_hello()
