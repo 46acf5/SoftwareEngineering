@@ -8,8 +8,3 @@ def dict_maker (**kwargs):
 dict_maker (a1 = 1, a2 = 20, a3 = 54, a4 = 13)
 dict_maker(name="Михаил", age = 31, weight = 70, eyes_color='blue')
 pprint(my_dict)
-
-input_string = 'HelloWorld'
-result = tuple(input_string)
-print(result)
-print(list(result))
