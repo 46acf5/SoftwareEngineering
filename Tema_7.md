@@ -1,4 +1,4 @@
-# Тема 7 Работа с файлами (ввод, вывод)
+![image](https://github.com/user-attachments/assets/89fa8b27-aaa0-4bc2-9eea-d4f2859d6129)# Тема 7 Работа с файлами (ввод, вывод)
 Отчет по Теме #7 выполнил(а):
 + Тимашева Алина Андреевна
 + ИВТ-22-2
@@ -26,6 +26,7 @@
 Составьте текстовый файл и положите его в одну директорию с программой на Python. Текстовый файл должен состоять минимум из двух строк.
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/43945d02-babe-48af-b6ae-f94fbcfd6801)
 
 ## Выводы
 В данном задании был создал тестовый файл input.txt для дальнейшей работы с ним.
@@ -41,6 +42,7 @@ f.close()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/f9309347-26b5-478d-8c40-703925e6162e)
 
 ## Выводы
 В данном задании была изучена работа метода readline().
@@ -58,6 +60,7 @@ f.close()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/45f678f8-9527-47e4-a24e-f2a39d0828a4)
 
 ## Выводы
 В данном задании была изучена работа метода readlines().
@@ -75,6 +78,7 @@ with open('input.txt', encoding='utf-8') as f:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/a9335e36-7717-4e0b-bef1-8297876ac676)
 
 ## Выводы
 В данном задании было изучено чтение файла построчно.
@@ -91,6 +95,7 @@ with open('input.txt', encoding='utf-8') as f:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/c22473c2-8393-43de-8b50-3036879729a3)
 
 ## Выводы
 В данном задании была изучена работа конструкции with open().
@@ -111,6 +116,7 @@ with open('input.txt', 'r', encoding='utf-8') as f:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/b369e098-9f5e-428c-b390-5217e4bfc623)
 
 ## Выводы
 В данном задании был изучен способ добавления новых строк в файл.
@@ -130,6 +136,9 @@ with open('input.txt', 'w', encoding='utf-8') as f:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/63ca5fb6-7579-446c-8429-beaa866dc6c9)
+![image](https://github.com/user-attachments/assets/b52ecc34-95cd-41c4-873b-ae98b327b92e)
+![image](https://github.com/user-attachments/assets/26f5a608-5924-4d7d-9f96-aa8eb11636dd)
 
 ## Выводы
 В данном задании был изучен способ изменения данных в файле.
@@ -155,6 +164,8 @@ print_docs("/Users/46acf/eclipse")
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/6c4848ed-86e7-4643-ae99-ad8d344e0229)
+![image](https://github.com/user-attachments/assets/8bb0ff77-6e02-490f-9de3-544cf59a8ad2)
 
 ## Выводы
 В данном задании была разработана функция print_docs(directory).
@@ -203,6 +214,7 @@ print(longest_words('input.txt'))
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/7b247816-b980-4974-b0d9-c096cc91bb68)
 
 ## Выводы
 В данном задании были изучены способы подсчета длины слова и списка слов.
@@ -231,6 +243,9 @@ with open('rows_300.csv', 'w', encoding='utf-8', newline='') as f:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/39cc0696-3b4b-4d0d-bb7d-84d1b68f04fb)
+![image](https://github.com/user-attachments/assets/29424f2b-61b8-4e72-a8d4-b55f5069ab63)
+![image](https://github.com/user-attachments/assets/2a682dfb-d72d-45bc-8ad8-a02700ea3d44)
 
 ## Выводы
 В данном задании был изучен способ составления таблицы в текстовом файле, а также способ записи туда изменяющихся данных.
@@ -267,6 +282,8 @@ count_words('article.txt')
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/01314e39-d225-48a9-9f9c-e91ce1fd0946)
+![image](https://github.com/user-attachments/assets/a90f73fe-3914-4f75-949a-dde749472fcc)
 
 ## Выводы
 Первое задание помогло разобраться с работой файлов в Python и функцией Counter для подсчета частоты слов.
@@ -281,6 +298,8 @@ with open('prices.txt') as f:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/7a992658-674e-4211-aac0-bb095a42bfb3)
+![image](https://github.com/user-attachments/assets/5e9b2dbe-2ad7-4dc9-8460-8ec48844f135)
 
 ## Выводы
 Второе задание продемонстрировало создание программы для учета расходов с использованием базовых функций записи и чтения файлов.
@@ -324,6 +343,8 @@ file_statistics('input.txt')
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/2bb57e0f-9642-453c-8520-ad0fa5c12408)
+![image](https://github.com/user-attachments/assets/03271743-8438-472d-bafd-5706fb28cf99)
 
 ## Выводы
 Третье задание показало, как подсчитывать буквы, слова и строки в тексте с использованием простых операций обработки строк.
@@ -374,6 +395,8 @@ main()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/69acbe0e-7b28-4f46-8f13-ef75b3b6a718)
+![image](https://github.com/user-attachments/assets/f7ede352-f981-4e2f-b964-0e8571ee1669)
 
 ## Выводы
 Шаги реализации:
