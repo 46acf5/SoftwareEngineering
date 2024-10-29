@@ -8,12 +8,13 @@ class Movie:
 
 first_movie = Movie("The Substance", "Dark Comedy")
 
-class RussianMovie (Movie):
-    def __init__(self, name, genre, country = "Russia"):
+class WorldMovie (Movie):
+    def __init__(self, name, genre, country):
         super().__init__(name, genre)
+        self.country = country
 
     def watch_ru(self):
-        print(f"Today we're watching russian movie {self.name} in {self.genre} genre")
+        print(f"Today we're watching russian movie {self.name} in {self.genre} genre, made in {self.country}")
 
-first_ru_movie = RussianMovie ("Brilliantovaya ruka", "Comedy")
+first_ru_movie = WorldMovie ("Brilliantovaya ruka", "Comedy", "Russia")
 first_ru_movie.watch_ru()
