@@ -39,6 +39,7 @@ my_car = Car("Toyota", "Corolla") #создание записи экземпл�
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/5dfca418-5973-4b30-878b-d087e6627b19)
 
 ## Выводы
 В результате выполнения данного задания мною были получены знания по созданию класса в языке Python.
@@ -64,6 +65,7 @@ my_car.drive()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/be85eefd-8275-466d-b5f4-926d9fd6bc83)
 
 ## Выводы
 В результате выполнения данного задания мною были получены знания по созданию в конструкторе класса атрибутов и методов.
@@ -90,6 +92,7 @@ my_electric_car.charge() #  метод, выводящий информацию 
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/ad7c23b4-c2b7-494c-bcb9-4e8ddb869909)
 
 ## Выводы
 В результате выполнения данного задания мною были получены знания по осуществлению наследования класса в языке Python.
@@ -117,6 +120,7 @@ my_car.drive() # метод, выводящий информацию об упр
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/2c26b78e-66a6-4072-85a0-057e3ee8e2b4)
 
 ## Выводы
 В результате выполнения данного задания мною были получены знания по использовнию инкапсуляции в языке Python.
@@ -154,6 +158,7 @@ for shape in shapes:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/d5d6f6a5-c897-4f46-bfaf-1c3e75cccefe)
 
 ## Выводы
 В результате выполнения данного задания мною были получены знания по использованию полиморфизма в языке Python.
@@ -173,6 +178,7 @@ first_movie = Movie("The Substance", "Dark Comedy")
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/92d04030-aee9-4fcb-91c0-0ce1fb7023f9)
 
 ## Выводы
 В результате выполнения данного задания мною был создан собственный класс Movie с объектом first_movie в языке Python.
@@ -196,6 +202,7 @@ first_movie.watch()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/bf82b0a0-fd7e-480f-82da-f8218af459a4)
 
 ## Выводы
 В результате выполнения данного задания мною были созданы атрибуты name и genre, а также метод watch для ранее созданного класса Movie. 
@@ -229,6 +236,7 @@ first_ru_movie.watch_ru()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/8de7e1c1-ecaf-4637-a34e-9a1da5d29b8c)
 
 ## Выводы
 В результате выполнения данного задания мною был создан класс WorldMovie, наследующий класс Movie, который дополняется атрибутом объекта country, позволяющим определить страну происхождения фильма.
@@ -254,6 +262,7 @@ first_movie.watch()
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/51a5295d-4bcf-4b44-8a33-7985acf3e7c2)
 
 ## Выводы
 В данном задании атрибут name был сделан защищенным, атрибут genre также был сделан приватным. В результате инкапсуляции данных атрибутов возникает ошибка доступа к данным вне класса.
@@ -291,6 +300,7 @@ for film in films:
 ```
 
 ### Результат.
+![image](https://github.com/user-attachments/assets/db544bbc-fe0e-44f0-a38d-de24b9e163db)
 
 ## Выводы
 В данном задании мы использовали полиморфизм для класса Movie, реализованный в классах MovieByItsYear и MovieByItsGenre, подразумевающие использование функции watch() с отличными параметрами.
