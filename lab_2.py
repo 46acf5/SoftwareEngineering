@@ -4,8 +4,8 @@ class Car:  #конструктор класса Car
         self.make = make #инициализация бренда
         self.model = model #инициализация модели
 
-        def drive(self):
-            print(f"Driving the {self.make} {self.model}")
+    def drive(self):
+        print(f"Driving the {self.make} {self.model}")
 
 my_car = Car("Toyota", "Corolla") # создание записи экземпляра машины
 #бренда Toyota, модели Corolla
