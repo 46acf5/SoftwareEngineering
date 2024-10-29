@@ -164,12 +164,18 @@ for shape in shapes:
 Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
+class Movie:
+    def __init__(self, name, genre):
+        self.name = name
+        self.genre = genre
 
+first_movie = Movie("The Substance", "Dark Comedy")
 ```
 
 ### Результат.
 
 ## Выводы
+В результате выполнения данного задания мною был создан собственный класс Movie с объектом first_movie в языке Python.
 
 ## Самостоятельная работа №2
 ### 
@@ -177,13 +183,22 @@ for shape in shapes:
 Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
+class Movie:
+    def __init__(self, name, genre):
+        self.name = name
+        self.genre = genre
 
+    def watch(self):
+        print(f"Today we're watching {self.name} in {self.genre} genre")
+
+first_movie = Movie("The Substance", "Dark Comedy")
+first_movie.watch()
 ```
 
 ### Результат.
 
 ## Выводы
-
+В результате выполнения данного задания мною были созданы атрибуты name и genre, а также метод watch для ранее созданного класса Movie. 
   
 ## Самостоятельная работа №3
 ### 
@@ -191,13 +206,32 @@ for shape in shapes:
 Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
+class Movie:
+    def __init__(self, name, genre):
+        self.name = name
+        self.genre = genre
 
+    def watch(self):
+        print(f"Today we're watching {self.name} in {self.genre} genre")
+
+first_movie = Movie("The Substance", "Dark Comedy")
+
+class WorldMovie (Movie):
+    def __init__(self, name, genre, country):
+        super().__init__(name, genre)
+        self.country = country
+
+    def watch_ru(self):
+        print(f"Today we're watching russian movie {self.name} in {self.genre} genre, made in {self.country}")
+
+first_ru_movie = WorldMovie ("Brilliantovaya ruka", "Comedy", "Russia")
+first_ru_movie.watch_ru()
 ```
 
 ### Результат.
 
 ## Выводы
-
+В результате выполнения данного задания мною был создан класс WorldMovie, наследующий класс Movie, который дополняется атрибутом объекта country, позволяющим определить страну происхождения фильма.
   
 ## Самостоятельная работа №4
 ### 
@@ -205,13 +239,24 @@ for shape in shapes:
 Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
+class Movie:
+    def __init__(self, name, genre):
+        self._name = name
+        self.__genre = genre
 
+    def watch(self):
+        print(f"Today we're watching {self._name} in {self.__genre} genre")
+
+first_movie = Movie("The Substance", "Dark Comedy")
+print(first_movie._name)
+print(first_movie.__genre)
+first_movie.watch()
 ```
 
 ### Результат.
 
 ## Выводы
-
+В данном задании атрибут name был сделан защищенным, атрибут genre также был сделан приватным. В результате инкапсуляции данных атрибутов возникает ошибка доступа к данным вне класса.
   
 ## Самостоятельная работа №5
 ### 
@@ -219,9 +264,48 @@ for shape in shapes:
 Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
+class Movie:
+    def watch(self):
+        pass
 
+class MovieByItsGenre(Movie):
+    def __init__(self, name, genre):
+        self._name = name
+        self._genre = genre
+
+    def watch(self):
+        print(f"Today we're watching {self._name} in {self._genre} genre")
+
+class MovieByItsYear(Movie):
+    def __init__(self, name, year):
+        self._name = name
+        self._year = year
+
+    def watch(self):
+        print(f"Today we're watching {self._name} of the {self._year} year")
+
+films = [MovieByItsGenre("Interstellar", "Adventure Epic"),
+         MovieByItsYear("Mad Max: Fury Road", 2015)]
+for film in films:
+    print(film.watch())
 ```
 
 ### Результат.
 
 ## Выводы
+В данном задании мы использовали полиморфизм для класса Movie, реализованный в классах MovieByItsYear и MovieByItsGenre, подразумевающие использование функции watch() с отличными параметрами.
+
+# Общие выводы
+
+В языке Python класс определяется с помощью ключевого слова class. Внутри класса определяются его атрибуты, которые хранят различные характеристики класса, и методы - функции класса. Для создания объекта класса используется конструктор. 
+Атрибуты хранят состояние объекта. Для определения и установки атрибутов внутри класса можно применять слово self. Методы класса фактически представляют функции, которые определенны внутри класса и которые определяют его поведение. 
+
+Инкапсуляция — ограничение доступа к составляющим объект компонентам (методам и переменным). Инкапсуляция делает некоторые из компонент доступными только внутри класса.
+Инкапсуляция в Python работает лишь на уровне соглашения между программистами о том, какие атрибуты являются общедоступными, а какие — внутренними.
+
+Одиночное подчеркивание в начале имени атрибута говорит о том, что переменная или метод не предназначен для использования вне методов класса, однако атрибут доступен по этому имени.
+Двойное подчеркивание в начале имени атрибута даёт большую защиту: атрибут становится недоступным по этому имени. Однако полностью это не защищает, так как атрибут всё равно остаётся доступным под именем _ИмяКласса__ИмяАтрибута.
+
+Наследование подразумевает то, что дочерний класс содержит все атрибуты родительского класса, при этом некоторые из них могут быть переопределены или добавлены в дочернем. 
+
+Полиморфизм - разное поведение одного и того же метода в разных классах. Например, мы можем сложить два числа, и можем сложить две строки. При этом получим разный результат, так как числа и строки являются разными классами.
