@@ -17,3 +17,7 @@ class Circle (Shape): # конструктор класса Circle
 
     def area(self): # функция, возвращающая площадь круга
         return 3.14 * self.radius * self.radius
+
+shapes = [Rectangle(4, 5), Circle(3)]
+for shape in shapes:
+    print(shape.area())
