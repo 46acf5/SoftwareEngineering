@@ -55,8 +55,8 @@ class Car:  #конструктор класса Car
         self.make = make #инициализация бренда
         self.model = model #инициализация модели
 
-        def drive(self):
-            print(f"Driving the {self.make} {self.model}")
+    def drive(self):
+        print(f"Driving the {self.make} {self.model}")
 
 my_car = Car("Toyota", "Corolla") # создание записи экземпляра машины
 #бренда Toyota, модели Corolla
@@ -147,6 +147,10 @@ class Circle (Shape): # конструктор класса Circle
 
     def area(self): # функция, возвращающая площадь круга
         return 3.14 * self.radius * self.radius
+
+shapes = [Rectangle(4, 5), Circle(3)]
+for shape in shapes:
+    print(shape.area())
 ```
 
 ### Результат.
