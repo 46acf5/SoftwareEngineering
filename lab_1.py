@@ -1,5 +1,5 @@
 class Ivan:
-    __slots = ['name']
+    __slots__ = ['name']
 
     def __init__(self, name):
 
