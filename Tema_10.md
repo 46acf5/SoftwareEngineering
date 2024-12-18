@@ -171,7 +171,28 @@ if __name__ == '__main__':
 Поскольку решение Фибоначчи для 100 с использованием рекурсии и без динамического программирования решается более десяти секунд, а решение точно такой же задачи, но через цикл for еще и для 200, занимает меньше 1 M секунды.
 
 ```python
+import time
 
+def measure_time(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        execution_time = end_time - start_time
+        print (f"Время выполнения {func.__name__ }: {execution_time} секунд")
+        return result
+    return wrapper
+
+@measure_time
+def fibonacci():
+    fib1 = fib2 = 1
+
+    for i in range(2, 200):
+        fib1, fib2 = fib2, fib1 + fib2
+        print(fib2, end=' ')
+
+if __name__ == '__main__':
+    fibonacci()
 ```
 
 ### Результат.
@@ -186,7 +207,16 @@ if __name__ == '__main__':
 Создайте пустой файл и файл, в котором есть какая-то информация. Напишите код программы. Если файл пустой, то, нужно вызвать исключение ("бросить исключение") и вывести в консоль "файл пустой", а если он не пустой, то вывести информацию из файла.
 
 ```python
+def readFile(file):
+    with open(file, "r") as f:
+        lines = f.readlines()
+        if not lines:
+            raise Exception("Файл пустой")
+        print(lines)
 
+if __name__ == "__main__":
+    readFile("notempty.txt")
+    readFile("empty.txt")
 ```
 
 ### Результат.
@@ -200,7 +230,15 @@ if __name__ == '__main__':
 Результатом выполнения задачи будет листинг кода и получившийся вывод в консоль
 
 ```python
+def twoPlus(num):
+    try:
+        return 2 + num
+    except TypeError as te:
+        print(te)
 
+if __name__ == "__main__":
+    print(twoPlus(35))
+    print(twoPlus("kwa"))
 ```
 
 ### Результат.
